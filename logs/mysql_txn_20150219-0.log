@@ -1,0 +1,304 @@
+txn[1003], 12:58:51.137, delete from o_order_detail 
+txn[1003], 12:58:51.139, Delete table[o_order_detail] rows[0] bind[null] 
+txn[1003], 12:58:51.139, delete from o_order 
+txn[1003], 12:58:51.140, Delete table[o_order] rows[0] bind[null] 
+txn[1003], 12:58:51.140, delete from o_customer 
+txn[1003], 12:58:51.140, Delete table[o_customer] rows[0] bind[null] 
+txn[1003], 12:58:51.140, delete from o_address 
+txn[1003], 12:58:51.141, Delete table[o_address] rows[0] bind[null] 
+txn[1003], 12:58:51.142, delete from o_country 
+txn[1003], 12:58:51.143, DeleteSql table[o_country] rows[0] bind[null] 
+txn[1003], 12:58:51.144, delete from o_product 
+txn[1003], 12:58:51.144, DeleteSql table[o_product] rows[0] bind[null] 
+txn[1004], 12:58:51.149, insert into o_country (code, name) values (?,?) 
+txn[1004], 12:58:51.150, Binding Insert [o_country]  set[code=NZ, name=New Zealand, ] 
+txn[1004], 12:58:51.150, Inserted [Country] [NZ] 
+txn[1004], 12:58:51.150, insert into o_country (code, name) values (?,?) 
+txn[1004], 12:58:51.150, Binding Insert [o_country]  set[code=AU, name=Australia, ] 
+txn[1004], 12:58:51.151, Inserted [Country] [AU] 
+txn[1005], 12:58:51.152, insert into o_product (id, sku, name, cretime, updtime) values (?,?,?,?,?) 
+txn[1005], 12:58:51.154, Binding Insert [o_product]  set[id=1, sku=C001, name=Chair, cretime=2015-02-19 12:58:51.153, updtime=2015-02-19 12:58:51.154, ] 
+txn[1005], 12:58:51.155, Inserted [Product] [1] 
+txn[1006], 12:58:51.155, insert into o_product (id, sku, name, cretime, updtime) values (?,?,?,?,?) 
+txn[1006], 12:58:51.155, Binding Insert [o_product]  set[id=2, sku=DSK1, name=Desk, cretime=2015-02-19 12:58:51.155, updtime=2015-02-19 12:58:51.155, ] 
+txn[1006], 12:58:51.156, Inserted [Product] [2] 
+txn[1007], 12:58:51.156, insert into o_product (id, sku, name, cretime, updtime) values (?,?,?,?,?) 
+txn[1007], 12:58:51.156, Binding Insert [o_product]  set[id=3, sku=C002, name=Computer, cretime=2015-02-19 12:58:51.156, updtime=2015-02-19 12:58:51.156, ] 
+txn[1007], 12:58:51.157, Inserted [Product] [3] 
+txn[1008], 12:58:51.157, insert into o_product (id, sku, name, cretime, updtime) values (?,?,?,?,?) 
+txn[1008], 12:58:51.157, Binding Insert [o_product]  set[id=4, sku=C003, name=Printer, cretime=2015-02-19 12:58:51.157, updtime=2015-02-19 12:58:51.157, ] 
+txn[1008], 12:58:51.157, Inserted [Product] [4] 
+txn[1009], 12:58:51.158, insert into o_customer (status, name, cretime, updtime, billing_address_id, shipping_address_id) values (?,?,?,?,?,?) 
+txn[1009], 12:58:51.159, Binding Insert [o_customer]  set[status=NEW, name=Cust NoAddress, cretime=2015-02-19 12:58:51.158, updtime=2015-02-19 12:58:51.158, billing_address_id=null, shipping_address_id=null, ] 
+txn[1009], 12:58:51.160, Inserted [Customer] [1] 
+txn[1010], 12:58:51.160, insert into o_address (line_1, line_2, city, cretime, updtime, country_code) values (?,?,?,?,?,?) 
+txn[1010], 12:58:51.161, Binding Insert [o_address]  set[line1=P.O.Box 1234, line2=Sandringham, city=Auckland, cretime=2015-02-19 12:58:51.161, updtime=2015-02-19 12:58:51.161, country_code=NZ, ] 
+txn[1010], 12:58:51.162, Inserted [Address] [1] 
+txn[1010], 12:58:51.162, insert into o_address (line_1, line_2, city, cretime, updtime, country_code) values (?,?,?,?,?,?) 
+txn[1010], 12:58:51.162, Binding Insert [o_address]  set[line1=1 Banana St, line2=Sandringham, city=Auckland, cretime=2015-02-19 12:58:51.162, updtime=2015-02-19 12:58:51.162, country_code=NZ, ] 
+txn[1010], 12:58:51.162, Inserted [Address] [2] 
+txn[1010], 12:58:51.163, insert into o_customer (status, name, cretime, updtime, billing_address_id, shipping_address_id) values (?,?,?,?,?,?) 
+txn[1010], 12:58:51.163, Binding Insert [o_customer]  set[status=NEW, name=Rob, cretime=2015-02-19 12:58:51.163, updtime=2015-02-19 12:58:51.163, billing_address_id=1, shipping_address_id=2, ] 
+txn[1010], 12:58:51.163, Inserted [Customer] [2] 
+txn[1011], 12:58:51.164, insert into o_order (status, order_date, ship_date, cretime, updtime, kcustomer_id) values (?,?,?,?,?,?) 
+txn[1011], 12:58:51.165, Binding Insert [o_order]  set[status=NEW, orderDate=2015-02-19, shipDate=null, cretime=2015-02-19 12:58:51.164, updtime=2015-02-19 12:58:51.164, kcustomer_id=1, ] 
+txn[1011], 12:58:51.165, Inserted [Order] [1] 
+txn[1011], 12:58:51.165, insert into o_order_detail (order_qty, ship_qty, cretime, updtime, order_id, product_id) values (?,?,?,?,?,?) 
+txn[1011], 12:58:51.166, Binding Insert [o_order_detail]  set[orderQty=5, shipQty=null, cretime=null, updtime=2015-02-19 12:58:51.166, order_id=1, product_id=1, ] 
+txn[1011], 12:58:51.166, Inserted [OrderDetail] [1] 
+txn[1011], 12:58:51.166, insert into o_order_detail (order_qty, ship_qty, cretime, updtime, order_id, product_id) values (?,?,?,?,?,?) 
+txn[1011], 12:58:51.167, Binding Insert [o_order_detail]  set[orderQty=3, shipQty=null, cretime=null, updtime=2015-02-19 12:58:51.166, order_id=1, product_id=2, ] 
+txn[1011], 12:58:51.167, Inserted [OrderDetail] [2] 
+txn[1011], 12:58:51.167, insert into o_order_detail (order_qty, ship_qty, cretime, updtime, order_id, product_id) values (?,?,?,?,?,?) 
+txn[1011], 12:58:51.167, Binding Insert [o_order_detail]  set[orderQty=1, shipQty=null, cretime=null, updtime=2015-02-19 12:58:51.167, order_id=1, product_id=3, ] 
+txn[1011], 12:58:51.168, Inserted [OrderDetail] [3] 
+txn[1012], 12:58:51.168, insert into o_order (status, order_date, ship_date, cretime, updtime, kcustomer_id) values (?,?,?,?,?,?) 
+txn[1012], 12:58:51.168, Binding Insert [o_order]  set[status=NEW, orderDate=2015-02-19, shipDate=null, cretime=2015-02-19 12:58:51.168, updtime=2015-02-19 12:58:51.168, kcustomer_id=2, ] 
+txn[1012], 12:58:51.169, Inserted [Order] [2] 
+txn[1012], 12:58:51.169, insert into o_order_detail (order_qty, ship_qty, cretime, updtime, order_id, product_id) values (?,?,?,?,?,?) 
+txn[1012], 12:58:51.169, Binding Insert [o_order_detail]  set[orderQty=4, shipQty=null, cretime=null, updtime=2015-02-19 12:58:51.169, order_id=2, product_id=1, ] 
+txn[1012], 12:58:51.170, Inserted [OrderDetail] [4] 
+txn[1013], 12:58:51.170, insert into o_order (status, order_date, ship_date, cretime, updtime, kcustomer_id) values (?,?,?,?,?,?) 
+txn[1013], 12:58:51.171, Binding Insert [o_order]  set[status=NEW, orderDate=2015-02-19, shipDate=null, cretime=2015-02-19 12:58:51.171, updtime=2015-02-19 12:58:51.171, kcustomer_id=1, ] 
+txn[1013], 12:58:51.171, Inserted [Order] [3] 
+txn[1013], 12:58:51.171, insert into o_order_detail (order_qty, ship_qty, cretime, updtime, order_id, product_id) values (?,?,?,?,?,?) 
+txn[1013], 12:58:51.171, Binding Insert [o_order_detail]  set[orderQty=3, shipQty=null, cretime=null, updtime=2015-02-19 12:58:51.171, order_id=3, product_id=1, ] 
+txn[1013], 12:58:51.172, Inserted [OrderDetail] [5] 
+txn[1013], 12:58:51.172, insert into o_order_detail (order_qty, ship_qty, cretime, updtime, order_id, product_id) values (?,?,?,?,?,?) 
+txn[1013], 12:58:51.172, Binding Insert [o_order_detail]  set[orderQty=40, shipQty=null, cretime=null, updtime=2015-02-19 12:58:51.172, order_id=3, product_id=3, ] 
+txn[1013], 12:58:51.173, Inserted [OrderDetail] [6] 
+txn[1014], 12:58:51.190, select count(*)  from o_order o 
+txn[1014], 12:58:51.192, FindRowCount exeMicros[1369] rows[3] type[app.data.Order] predicates[] bind[] 
+txn[1003], 12:59:13.648, delete from o_order_detail 
+txn[1003], 12:59:13.649, Delete table[o_order_detail] rows[0] bind[null] 
+txn[1003], 12:59:13.650, delete from o_order 
+txn[1003], 12:59:13.650, Delete table[o_order] rows[0] bind[null] 
+txn[1003], 12:59:13.650, delete from o_customer 
+txn[1003], 12:59:13.651, Delete table[o_customer] rows[0] bind[null] 
+txn[1003], 12:59:13.651, delete from o_address 
+txn[1003], 12:59:13.651, Delete table[o_address] rows[0] bind[null] 
+txn[1003], 12:59:13.652, delete from o_country 
+txn[1003], 12:59:13.654, DeleteSql table[o_country] rows[0] bind[null] 
+txn[1003], 12:59:13.654, delete from o_product 
+txn[1003], 12:59:13.655, DeleteSql table[o_product] rows[0] bind[null] 
+txn[1004], 12:59:13.659, insert into o_country (code, name) values (?,?) 
+txn[1004], 12:59:13.660, Binding Insert [o_country]  set[code=NZ, name=New Zealand, ] 
+txn[1004], 12:59:13.661, Inserted [Country] [NZ] 
+txn[1004], 12:59:13.661, insert into o_country (code, name) values (?,?) 
+txn[1004], 12:59:13.661, Binding Insert [o_country]  set[code=AU, name=Australia, ] 
+txn[1004], 12:59:13.661, Inserted [Country] [AU] 
+txn[1005], 12:59:13.662, insert into o_product (id, sku, name, cretime, updtime) values (?,?,?,?,?) 
+txn[1005], 12:59:13.664, Binding Insert [o_product]  set[id=1, sku=C001, name=Chair, cretime=2015-02-19 12:59:13.663, updtime=2015-02-19 12:59:13.664, ] 
+txn[1005], 12:59:13.665, Inserted [Product] [1] 
+txn[1006], 12:59:13.665, insert into o_product (id, sku, name, cretime, updtime) values (?,?,?,?,?) 
+txn[1006], 12:59:13.665, Binding Insert [o_product]  set[id=2, sku=DSK1, name=Desk, cretime=2015-02-19 12:59:13.665, updtime=2015-02-19 12:59:13.665, ] 
+txn[1006], 12:59:13.666, Inserted [Product] [2] 
+txn[1007], 12:59:13.666, insert into o_product (id, sku, name, cretime, updtime) values (?,?,?,?,?) 
+txn[1007], 12:59:13.666, Binding Insert [o_product]  set[id=3, sku=C002, name=Computer, cretime=2015-02-19 12:59:13.666, updtime=2015-02-19 12:59:13.666, ] 
+txn[1007], 12:59:13.667, Inserted [Product] [3] 
+txn[1008], 12:59:13.667, insert into o_product (id, sku, name, cretime, updtime) values (?,?,?,?,?) 
+txn[1008], 12:59:13.667, Binding Insert [o_product]  set[id=4, sku=C003, name=Printer, cretime=2015-02-19 12:59:13.667, updtime=2015-02-19 12:59:13.667, ] 
+txn[1008], 12:59:13.668, Inserted [Product] [4] 
+txn[1009], 12:59:13.668, insert into o_customer (status, name, cretime, updtime, billing_address_id, shipping_address_id) values (?,?,?,?,?,?) 
+txn[1009], 12:59:13.669, Binding Insert [o_customer]  set[status=NEW, name=Cust NoAddress, cretime=2015-02-19 12:59:13.669, updtime=2015-02-19 12:59:13.669, billing_address_id=null, shipping_address_id=null, ] 
+txn[1009], 12:59:13.670, Inserted [Customer] [1] 
+txn[1010], 12:59:13.671, insert into o_address (line_1, line_2, city, cretime, updtime, country_code) values (?,?,?,?,?,?) 
+txn[1010], 12:59:13.671, Binding Insert [o_address]  set[line1=P.O.Box 1234, line2=Sandringham, city=Auckland, cretime=2015-02-19 12:59:13.671, updtime=2015-02-19 12:59:13.671, country_code=NZ, ] 
+txn[1010], 12:59:13.672, Inserted [Address] [1] 
+txn[1010], 12:59:13.672, insert into o_address (line_1, line_2, city, cretime, updtime, country_code) values (?,?,?,?,?,?) 
+txn[1010], 12:59:13.672, Binding Insert [o_address]  set[line1=1 Banana St, line2=Sandringham, city=Auckland, cretime=2015-02-19 12:59:13.672, updtime=2015-02-19 12:59:13.672, country_code=NZ, ] 
+txn[1010], 12:59:13.673, Inserted [Address] [2] 
+txn[1010], 12:59:13.673, insert into o_customer (status, name, cretime, updtime, billing_address_id, shipping_address_id) values (?,?,?,?,?,?) 
+txn[1010], 12:59:13.673, Binding Insert [o_customer]  set[status=NEW, name=Rob, cretime=2015-02-19 12:59:13.673, updtime=2015-02-19 12:59:13.673, billing_address_id=1, shipping_address_id=2, ] 
+txn[1010], 12:59:13.674, Inserted [Customer] [2] 
+txn[1011], 12:59:13.674, insert into o_order (status, order_date, ship_date, cretime, updtime, kcustomer_id) values (?,?,?,?,?,?) 
+txn[1011], 12:59:13.675, Binding Insert [o_order]  set[status=NEW, orderDate=2015-02-19, shipDate=null, cretime=2015-02-19 12:59:13.675, updtime=2015-02-19 12:59:13.675, kcustomer_id=1, ] 
+txn[1011], 12:59:13.676, Inserted [Order] [1] 
+txn[1011], 12:59:13.676, insert into o_order_detail (order_qty, ship_qty, cretime, updtime, order_id, product_id) values (?,?,?,?,?,?) 
+txn[1011], 12:59:13.677, Binding Insert [o_order_detail]  set[orderQty=5, shipQty=null, cretime=null, updtime=2015-02-19 12:59:13.677, order_id=1, product_id=1, ] 
+txn[1011], 12:59:13.678, Inserted [OrderDetail] [1] 
+txn[1011], 12:59:13.678, insert into o_order_detail (order_qty, ship_qty, cretime, updtime, order_id, product_id) values (?,?,?,?,?,?) 
+txn[1011], 12:59:13.678, Binding Insert [o_order_detail]  set[orderQty=3, shipQty=null, cretime=null, updtime=2015-02-19 12:59:13.678, order_id=1, product_id=2, ] 
+txn[1011], 12:59:13.678, Inserted [OrderDetail] [2] 
+txn[1011], 12:59:13.678, insert into o_order_detail (order_qty, ship_qty, cretime, updtime, order_id, product_id) values (?,?,?,?,?,?) 
+txn[1011], 12:59:13.678, Binding Insert [o_order_detail]  set[orderQty=1, shipQty=null, cretime=null, updtime=2015-02-19 12:59:13.678, order_id=1, product_id=3, ] 
+txn[1011], 12:59:13.679, Inserted [OrderDetail] [3] 
+txn[1012], 12:59:13.680, insert into o_order (status, order_date, ship_date, cretime, updtime, kcustomer_id) values (?,?,?,?,?,?) 
+txn[1012], 12:59:13.680, Binding Insert [o_order]  set[status=NEW, orderDate=2015-02-19, shipDate=null, cretime=2015-02-19 12:59:13.68, updtime=2015-02-19 12:59:13.68, kcustomer_id=2, ] 
+txn[1012], 12:59:13.681, Inserted [Order] [2] 
+txn[1012], 12:59:13.681, insert into o_order_detail (order_qty, ship_qty, cretime, updtime, order_id, product_id) values (?,?,?,?,?,?) 
+txn[1012], 12:59:13.681, Binding Insert [o_order_detail]  set[orderQty=4, shipQty=null, cretime=null, updtime=2015-02-19 12:59:13.681, order_id=2, product_id=1, ] 
+txn[1012], 12:59:13.682, Inserted [OrderDetail] [4] 
+txn[1013], 12:59:13.682, insert into o_order (status, order_date, ship_date, cretime, updtime, kcustomer_id) values (?,?,?,?,?,?) 
+txn[1013], 12:59:13.682, Binding Insert [o_order]  set[status=NEW, orderDate=2015-02-19, shipDate=null, cretime=2015-02-19 12:59:13.682, updtime=2015-02-19 12:59:13.682, kcustomer_id=1, ] 
+txn[1013], 12:59:13.683, Inserted [Order] [3] 
+txn[1013], 12:59:13.683, insert into o_order_detail (order_qty, ship_qty, cretime, updtime, order_id, product_id) values (?,?,?,?,?,?) 
+txn[1013], 12:59:13.683, Binding Insert [o_order_detail]  set[orderQty=3, shipQty=null, cretime=null, updtime=2015-02-19 12:59:13.683, order_id=3, product_id=1, ] 
+txn[1013], 12:59:13.683, Inserted [OrderDetail] [5] 
+txn[1013], 12:59:13.683, insert into o_order_detail (order_qty, ship_qty, cretime, updtime, order_id, product_id) values (?,?,?,?,?,?) 
+txn[1013], 12:59:13.684, Binding Insert [o_order_detail]  set[orderQty=40, shipQty=null, cretime=null, updtime=2015-02-19 12:59:13.684, order_id=3, product_id=3, ] 
+txn[1013], 12:59:13.684, Inserted [OrderDetail] [6] 
+txn[1014], 12:59:13.702, select count(*)  from o_order o 
+txn[1014], 12:59:13.702, FindRowCount exeMicros[343] rows[3] type[app.data.Order] predicates[] bind[] 
+txn[1003], 12:59:35.114, select count(*) as cnt from o_order 
+txn[1003], 12:59:35.119, SqlQuery  rows[1] time[5] bind[] finished[true] 
+txn[1003], 13:02:59.747, insert into o_country (code, name) values (?,?) 
+txn[1003], 13:02:59.748, Binding Insert [o_country]  set[code=NZ, name=New Zealand, ] 
+txn[1003], 13:02:59.749, Inserted [Country] [NZ] 
+txn[1003], 13:02:59.749, insert into o_country (code, name) values (?,?) 
+txn[1003], 13:02:59.749, Binding Insert [o_country]  set[code=AU, name=Australia, ] 
+txn[1003], 13:02:59.749, Inserted [Country] [AU] 
+txn[1004], 13:02:59.750, insert into o_product (id, sku, name, cretime, updtime) values (?,?,?,?,?) 
+txn[1004], 13:02:59.752, Binding Insert [o_product]  set[id=1, sku=C001, name=Chair, cretime=2015-02-19 13:02:59.751, updtime=2015-02-19 13:02:59.752, ] 
+txn[1004], 13:02:59.753, Inserted [Product] [1] 
+txn[1005], 13:02:59.753, insert into o_product (id, sku, name, cretime, updtime) values (?,?,?,?,?) 
+txn[1005], 13:02:59.753, Binding Insert [o_product]  set[id=2, sku=DSK1, name=Desk, cretime=2015-02-19 13:02:59.753, updtime=2015-02-19 13:02:59.753, ] 
+txn[1005], 13:02:59.754, Inserted [Product] [2] 
+txn[1006], 13:02:59.754, insert into o_product (id, sku, name, cretime, updtime) values (?,?,?,?,?) 
+txn[1006], 13:02:59.754, Binding Insert [o_product]  set[id=3, sku=C002, name=Computer, cretime=2015-02-19 13:02:59.754, updtime=2015-02-19 13:02:59.754, ] 
+txn[1006], 13:02:59.755, Inserted [Product] [3] 
+txn[1007], 13:02:59.755, insert into o_product (id, sku, name, cretime, updtime) values (?,?,?,?,?) 
+txn[1007], 13:02:59.755, Binding Insert [o_product]  set[id=4, sku=C003, name=Printer, cretime=2015-02-19 13:02:59.755, updtime=2015-02-19 13:02:59.755, ] 
+txn[1007], 13:02:59.756, Inserted [Product] [4] 
+txn[1003], 13:06:41.099, delete from o_order_detail 
+txn[1003], 13:06:41.100, Delete table[o_order_detail] rows[0] bind[null] 
+txn[1003], 13:06:41.101, delete from o_order 
+txn[1003], 13:06:41.101, Delete table[o_order] rows[0] bind[null] 
+txn[1003], 13:06:41.102, delete from o_customer 
+txn[1003], 13:06:41.102, Delete table[o_customer] rows[0] bind[null] 
+txn[1003], 13:06:41.102, delete from o_address 
+txn[1003], 13:06:41.102, Delete table[o_address] rows[0] bind[null] 
+txn[1003], 13:06:41.104, delete from o_country 
+txn[1003], 13:06:41.105, DeleteSql table[o_country] rows[0] bind[null] 
+txn[1003], 13:06:41.105, delete from o_product 
+txn[1003], 13:06:41.106, DeleteSql table[o_product] rows[0] bind[null] 
+txn[1004], 13:06:41.111, insert into o_country (code, name) values (?,?) 
+txn[1004], 13:06:41.112, Binding Insert [o_country]  set[code=NZ, name=New Zealand, ] 
+txn[1004], 13:06:41.112, Inserted [Country] [NZ] 
+txn[1004], 13:06:41.112, insert into o_country (code, name) values (?,?) 
+txn[1004], 13:06:41.112, Binding Insert [o_country]  set[code=AU, name=Australia, ] 
+txn[1004], 13:06:41.113, Inserted [Country] [AU] 
+txn[1005], 13:06:41.114, insert into o_product (id, sku, name, cretime, updtime) values (?,?,?,?,?) 
+txn[1005], 13:06:41.115, Binding Insert [o_product]  set[id=1, sku=C001, name=Chair, cretime=2015-02-19 13:06:41.114, updtime=2015-02-19 13:06:41.115, ] 
+txn[1005], 13:06:41.116, Inserted [Product] [1] 
+txn[1006], 13:06:41.116, insert into o_product (id, sku, name, cretime, updtime) values (?,?,?,?,?) 
+txn[1006], 13:06:41.116, Binding Insert [o_product]  set[id=2, sku=DSK1, name=Desk, cretime=2015-02-19 13:06:41.116, updtime=2015-02-19 13:06:41.116, ] 
+txn[1006], 13:06:41.117, Inserted [Product] [2] 
+txn[1007], 13:06:41.117, insert into o_product (id, sku, name, cretime, updtime) values (?,?,?,?,?) 
+txn[1007], 13:06:41.118, Binding Insert [o_product]  set[id=3, sku=C002, name=Computer, cretime=2015-02-19 13:06:41.117, updtime=2015-02-19 13:06:41.117, ] 
+txn[1007], 13:06:41.118, Inserted [Product] [3] 
+txn[1008], 13:06:41.118, insert into o_product (id, sku, name, cretime, updtime) values (?,?,?,?,?) 
+txn[1008], 13:06:41.118, Binding Insert [o_product]  set[id=4, sku=C003, name=Printer, cretime=2015-02-19 13:06:41.118, updtime=2015-02-19 13:06:41.118, ] 
+txn[1008], 13:06:41.119, Inserted [Product] [4] 
+txn[1009], 13:06:41.119, insert into o_customer (status, name, cretime, updtime, billing_address_id, shipping_address_id) values (?,?,?,?,?,?) 
+txn[1009], 13:06:41.120, Binding Insert [o_customer]  set[status=NEW, name=Cust NoAddress, cretime=2015-02-19 13:06:41.12, updtime=2015-02-19 13:06:41.12, billing_address_id=null, shipping_address_id=null, ] 
+txn[1009], 13:06:41.121, Inserted [Customer] [1] 
+txn[1010], 13:06:41.122, insert into o_address (line_1, line_2, city, cretime, updtime, country_code) values (?,?,?,?,?,?) 
+txn[1010], 13:06:41.123, Binding Insert [o_address]  set[line1=P.O.Box 1234, line2=Sandringham, city=Auckland, cretime=2015-02-19 13:06:41.123, updtime=2015-02-19 13:06:41.123, country_code=NZ, ] 
+txn[1010], 13:06:41.125, Inserted [Address] [1] 
+txn[1010], 13:06:41.125, insert into o_address (line_1, line_2, city, cretime, updtime, country_code) values (?,?,?,?,?,?) 
+txn[1010], 13:06:41.125, Binding Insert [o_address]  set[line1=1 Banana St, line2=Sandringham, city=Auckland, cretime=2015-02-19 13:06:41.125, updtime=2015-02-19 13:06:41.125, country_code=NZ, ] 
+txn[1010], 13:06:41.126, Inserted [Address] [2] 
+txn[1010], 13:06:41.126, insert into o_customer (status, name, cretime, updtime, billing_address_id, shipping_address_id) values (?,?,?,?,?,?) 
+txn[1010], 13:06:41.127, Binding Insert [o_customer]  set[status=NEW, name=Rob, cretime=2015-02-19 13:06:41.126, updtime=2015-02-19 13:06:41.126, billing_address_id=1, shipping_address_id=2, ] 
+txn[1010], 13:06:41.127, Inserted [Customer] [2] 
+txn[1011], 13:06:41.127, insert into o_order (status, order_date, ship_date, cretime, updtime, kcustomer_id) values (?,?,?,?,?,?) 
+txn[1011], 13:06:41.128, Binding Insert [o_order]  set[status=NEW, orderDate=2015-02-19, shipDate=null, cretime=2015-02-19 13:06:41.128, updtime=2015-02-19 13:06:41.128, kcustomer_id=1, ] 
+txn[1011], 13:06:41.129, Inserted [Order] [1] 
+txn[1011], 13:06:41.129, insert into o_order_detail (order_qty, ship_qty, cretime, updtime, order_id, product_id) values (?,?,?,?,?,?) 
+txn[1011], 13:06:41.130, Binding Insert [o_order_detail]  set[orderQty=5, shipQty=null, cretime=null, updtime=2015-02-19 13:06:41.13, order_id=1, product_id=1, ] 
+txn[1011], 13:06:41.130, Inserted [OrderDetail] [1] 
+txn[1011], 13:06:41.130, insert into o_order_detail (order_qty, ship_qty, cretime, updtime, order_id, product_id) values (?,?,?,?,?,?) 
+txn[1011], 13:06:41.130, Binding Insert [o_order_detail]  set[orderQty=3, shipQty=null, cretime=null, updtime=2015-02-19 13:06:41.13, order_id=1, product_id=2, ] 
+txn[1011], 13:06:41.131, Inserted [OrderDetail] [2] 
+txn[1011], 13:06:41.131, insert into o_order_detail (order_qty, ship_qty, cretime, updtime, order_id, product_id) values (?,?,?,?,?,?) 
+txn[1011], 13:06:41.131, Binding Insert [o_order_detail]  set[orderQty=1, shipQty=null, cretime=null, updtime=2015-02-19 13:06:41.131, order_id=1, product_id=3, ] 
+txn[1011], 13:06:41.131, Inserted [OrderDetail] [3] 
+txn[1012], 13:06:41.132, insert into o_order (status, order_date, ship_date, cretime, updtime, kcustomer_id) values (?,?,?,?,?,?) 
+txn[1012], 13:06:41.132, Binding Insert [o_order]  set[status=NEW, orderDate=2015-02-19, shipDate=null, cretime=2015-02-19 13:06:41.132, updtime=2015-02-19 13:06:41.132, kcustomer_id=2, ] 
+txn[1012], 13:06:41.132, Inserted [Order] [2] 
+txn[1012], 13:06:41.132, insert into o_order_detail (order_qty, ship_qty, cretime, updtime, order_id, product_id) values (?,?,?,?,?,?) 
+txn[1012], 13:06:41.132, Binding Insert [o_order_detail]  set[orderQty=4, shipQty=null, cretime=null, updtime=2015-02-19 13:06:41.132, order_id=2, product_id=1, ] 
+txn[1012], 13:06:41.133, Inserted [OrderDetail] [4] 
+txn[1013], 13:06:41.133, insert into o_order (status, order_date, ship_date, cretime, updtime, kcustomer_id) values (?,?,?,?,?,?) 
+txn[1013], 13:06:41.134, Binding Insert [o_order]  set[status=NEW, orderDate=2015-02-19, shipDate=null, cretime=2015-02-19 13:06:41.134, updtime=2015-02-19 13:06:41.134, kcustomer_id=1, ] 
+txn[1013], 13:06:41.134, Inserted [Order] [3] 
+txn[1013], 13:06:41.134, insert into o_order_detail (order_qty, ship_qty, cretime, updtime, order_id, product_id) values (?,?,?,?,?,?) 
+txn[1013], 13:06:41.134, Binding Insert [o_order_detail]  set[orderQty=3, shipQty=null, cretime=null, updtime=2015-02-19 13:06:41.134, order_id=3, product_id=1, ] 
+txn[1013], 13:06:41.135, Inserted [OrderDetail] [5] 
+txn[1013], 13:06:41.135, insert into o_order_detail (order_qty, ship_qty, cretime, updtime, order_id, product_id) values (?,?,?,?,?,?) 
+txn[1013], 13:06:41.135, Binding Insert [o_order_detail]  set[orderQty=40, shipQty=null, cretime=null, updtime=2015-02-19 13:06:41.135, order_id=3, product_id=3, ] 
+txn[1013], 13:06:41.135, Inserted [OrderDetail] [6] 
+txn[1014], 13:06:41.153, select count(*)  from o_order o 
+txn[1014], 13:06:41.153, FindRowCount exeMicros[430] rows[3] type[app.data.Order] predicates[] bind[] 
+txn[1003], 13:07:15.338, delete from o_order_detail 
+txn[1003], 13:07:15.338, Delete table[o_order_detail] rows[0] bind[null] 
+txn[1003], 13:07:15.339, delete from o_order 
+txn[1003], 13:07:15.339, Delete table[o_order] rows[0] bind[null] 
+txn[1003], 13:07:15.339, delete from o_customer 
+txn[1003], 13:07:15.340, Delete table[o_customer] rows[0] bind[null] 
+txn[1003], 13:07:15.340, delete from o_address 
+txn[1003], 13:07:15.340, Delete table[o_address] rows[0] bind[null] 
+txn[1003], 13:07:15.342, delete from o_country 
+txn[1003], 13:07:15.342, DeleteSql table[o_country] rows[0] bind[null] 
+txn[1003], 13:07:15.343, delete from o_product 
+txn[1003], 13:07:15.343, DeleteSql table[o_product] rows[0] bind[null] 
+txn[1004], 13:07:15.348, insert into o_country (code, name) values (?,?) 
+txn[1004], 13:07:15.349, Binding Insert [o_country]  set[code=NZ, name=New Zealand, ] 
+txn[1004], 13:07:15.350, Inserted [Country] [NZ] 
+txn[1004], 13:07:15.350, insert into o_country (code, name) values (?,?) 
+txn[1004], 13:07:15.350, Binding Insert [o_country]  set[code=AU, name=Australia, ] 
+txn[1004], 13:07:15.350, Inserted [Country] [AU] 
+txn[1005], 13:07:15.351, insert into o_product (id, sku, name, cretime, updtime) values (?,?,?,?,?) 
+txn[1005], 13:07:15.353, Binding Insert [o_product]  set[id=1, sku=C001, name=Chair, cretime=2015-02-19 13:07:15.351, updtime=2015-02-19 13:07:15.353, ] 
+txn[1005], 13:07:15.353, Inserted [Product] [1] 
+txn[1006], 13:07:15.354, insert into o_product (id, sku, name, cretime, updtime) values (?,?,?,?,?) 
+txn[1006], 13:07:15.354, Binding Insert [o_product]  set[id=2, sku=DSK1, name=Desk, cretime=2015-02-19 13:07:15.354, updtime=2015-02-19 13:07:15.354, ] 
+txn[1006], 13:07:15.354, Inserted [Product] [2] 
+txn[1007], 13:07:15.355, insert into o_product (id, sku, name, cretime, updtime) values (?,?,?,?,?) 
+txn[1007], 13:07:15.355, Binding Insert [o_product]  set[id=3, sku=C002, name=Computer, cretime=2015-02-19 13:07:15.355, updtime=2015-02-19 13:07:15.355, ] 
+txn[1007], 13:07:15.355, Inserted [Product] [3] 
+txn[1008], 13:07:15.356, insert into o_product (id, sku, name, cretime, updtime) values (?,?,?,?,?) 
+txn[1008], 13:07:15.356, Binding Insert [o_product]  set[id=4, sku=C003, name=Printer, cretime=2015-02-19 13:07:15.356, updtime=2015-02-19 13:07:15.356, ] 
+txn[1008], 13:07:15.356, Inserted [Product] [4] 
+txn[1009], 13:07:15.357, insert into o_customer (status, name, cretime, updtime, billing_address_id, shipping_address_id) values (?,?,?,?,?,?) 
+txn[1009], 13:07:15.357, Binding Insert [o_customer]  set[status=NEW, name=Cust NoAddress, cretime=2015-02-19 13:07:15.357, updtime=2015-02-19 13:07:15.357, billing_address_id=null, shipping_address_id=null, ] 
+txn[1009], 13:07:15.359, Inserted [Customer] [1] 
+txn[1010], 13:07:15.359, insert into o_address (line_1, line_2, city, cretime, updtime, country_code) values (?,?,?,?,?,?) 
+txn[1010], 13:07:15.360, Binding Insert [o_address]  set[line1=P.O.Box 1234, line2=Sandringham, city=Auckland, cretime=2015-02-19 13:07:15.36, updtime=2015-02-19 13:07:15.36, country_code=NZ, ] 
+txn[1010], 13:07:15.361, Inserted [Address] [1] 
+txn[1010], 13:07:15.361, insert into o_address (line_1, line_2, city, cretime, updtime, country_code) values (?,?,?,?,?,?) 
+txn[1010], 13:07:15.361, Binding Insert [o_address]  set[line1=1 Banana St, line2=Sandringham, city=Auckland, cretime=2015-02-19 13:07:15.361, updtime=2015-02-19 13:07:15.361, country_code=NZ, ] 
+txn[1010], 13:07:15.362, Inserted [Address] [2] 
+txn[1010], 13:07:15.362, insert into o_customer (status, name, cretime, updtime, billing_address_id, shipping_address_id) values (?,?,?,?,?,?) 
+txn[1010], 13:07:15.362, Binding Insert [o_customer]  set[status=NEW, name=Rob, cretime=2015-02-19 13:07:15.362, updtime=2015-02-19 13:07:15.362, billing_address_id=1, shipping_address_id=2, ] 
+txn[1010], 13:07:15.363, Inserted [Customer] [2] 
+txn[1011], 13:07:15.363, insert into o_order (status, order_date, ship_date, cretime, updtime, kcustomer_id) values (?,?,?,?,?,?) 
+txn[1011], 13:07:15.364, Binding Insert [o_order]  set[status=NEW, orderDate=2015-02-19, shipDate=null, cretime=2015-02-19 13:07:15.364, updtime=2015-02-19 13:07:15.364, kcustomer_id=1, ] 
+txn[1011], 13:07:15.365, Inserted [Order] [1] 
+txn[1011], 13:07:15.365, insert into o_order_detail (order_qty, ship_qty, cretime, updtime, order_id, product_id) values (?,?,?,?,?,?) 
+txn[1011], 13:07:15.365, Binding Insert [o_order_detail]  set[orderQty=5, shipQty=null, cretime=null, updtime=2015-02-19 13:07:15.365, order_id=1, product_id=1, ] 
+txn[1011], 13:07:15.366, Inserted [OrderDetail] [1] 
+txn[1011], 13:07:15.366, insert into o_order_detail (order_qty, ship_qty, cretime, updtime, order_id, product_id) values (?,?,?,?,?,?) 
+txn[1011], 13:07:15.366, Binding Insert [o_order_detail]  set[orderQty=3, shipQty=null, cretime=null, updtime=2015-02-19 13:07:15.366, order_id=1, product_id=2, ] 
+txn[1011], 13:07:15.366, Inserted [OrderDetail] [2] 
+txn[1011], 13:07:15.366, insert into o_order_detail (order_qty, ship_qty, cretime, updtime, order_id, product_id) values (?,?,?,?,?,?) 
+txn[1011], 13:07:15.367, Binding Insert [o_order_detail]  set[orderQty=1, shipQty=null, cretime=null, updtime=2015-02-19 13:07:15.367, order_id=1, product_id=3, ] 
+txn[1011], 13:07:15.367, Inserted [OrderDetail] [3] 
+txn[1012], 13:07:15.368, insert into o_order (status, order_date, ship_date, cretime, updtime, kcustomer_id) values (?,?,?,?,?,?) 
+txn[1012], 13:07:15.368, Binding Insert [o_order]  set[status=NEW, orderDate=2015-02-19, shipDate=null, cretime=2015-02-19 13:07:15.368, updtime=2015-02-19 13:07:15.368, kcustomer_id=2, ] 
+txn[1012], 13:07:15.368, Inserted [Order] [2] 
+txn[1012], 13:07:15.368, insert into o_order_detail (order_qty, ship_qty, cretime, updtime, order_id, product_id) values (?,?,?,?,?,?) 
+txn[1012], 13:07:15.368, Binding Insert [o_order_detail]  set[orderQty=4, shipQty=null, cretime=null, updtime=2015-02-19 13:07:15.368, order_id=2, product_id=1, ] 
+txn[1012], 13:07:15.369, Inserted [OrderDetail] [4] 
+txn[1013], 13:07:15.370, insert into o_order (status, order_date, ship_date, cretime, updtime, kcustomer_id) values (?,?,?,?,?,?) 
+txn[1013], 13:07:15.370, Binding Insert [o_order]  set[status=NEW, orderDate=2015-02-19, shipDate=null, cretime=2015-02-19 13:07:15.37, updtime=2015-02-19 13:07:15.37, kcustomer_id=1, ] 
+txn[1013], 13:07:15.370, Inserted [Order] [3] 
+txn[1013], 13:07:15.370, insert into o_order_detail (order_qty, ship_qty, cretime, updtime, order_id, product_id) values (?,?,?,?,?,?) 
+txn[1013], 13:07:15.370, Binding Insert [o_order_detail]  set[orderQty=3, shipQty=null, cretime=null, updtime=2015-02-19 13:07:15.37, order_id=3, product_id=1, ] 
+txn[1013], 13:07:15.371, Inserted [OrderDetail] [5] 
+txn[1013], 13:07:15.371, insert into o_order_detail (order_qty, ship_qty, cretime, updtime, order_id, product_id) values (?,?,?,?,?,?) 
+txn[1013], 13:07:15.371, Binding Insert [o_order_detail]  set[orderQty=40, shipQty=null, cretime=null, updtime=2015-02-19 13:07:15.371, order_id=3, product_id=3, ] 
+txn[1013], 13:07:15.371, Inserted [OrderDetail] [6] 
+txn[1014], 13:07:15.389, select count(*)  from o_order o 
+txn[1014], 13:07:15.390, FindRowCount exeMicros[463] rows[3] type[app.data.Order] predicates[] bind[] 
